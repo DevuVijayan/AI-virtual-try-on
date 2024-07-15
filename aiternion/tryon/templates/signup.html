@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 40%;
+            margin: auto;
+            overflow: hidden;
+            margin-top:150px;
+        }
+        .login {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .login input[type="email"], .login input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .login button {
+            padding: 10px;
+            width: 100%;
+            background: #77aadd;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .login button:hover {
+            background: #005f6b;
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .signup-link a {
+            color: #77aadd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="login">
+            <h2>Sign Up</h2>
+            <form>
+                <input type="email" placeholder="E-MAIL" required>
+                <input type="password" placeholder="PASSWORD" required>
+                <button type="submit">SIGN UP</button>
+            </form>
+            <div class="signup-link">
+                <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
